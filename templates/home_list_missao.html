@@ -1,0 +1,16 @@
+{% extends 'admin/model/list.html' %}
+
+{% block list_row_actions_column scoped %}
+   {% if admin_view.column_display_actions %}
+   <td class="list-buttons-column">
+       {% block list_row_actions scoped %}
+           {% for action in list_row_actions %}
+               {% if row.status != 2 and row.status != 3 %}
+                  {{ action.render_ctx(get_pk_value(row), row) }}
+              {%- endif -%}
+          {% endfor %}
+      {% endblock %}
+  </td>
+  {%- endif -%}
+{% endblock %}
+
