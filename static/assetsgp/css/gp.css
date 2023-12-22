@@ -1,0 +1,12 @@
+#carouselExampleInterval img {
+    max-height: 400px; /* Ajuste a altura máxima conforme necessário */
+    width: auto;
+    margin: auto;
+    padding-top: -25%;
+    margin-top: 30%;
+  }
+  #carouselExampleInterval img {
+  max-width: 100%; /* A imagem não ultrapassará a largura do contêiner pai */
+  height: auto;
+  margin: auto;
+}

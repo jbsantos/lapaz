@@ -1,0 +1,183 @@
+{% macro pagina_estatica(classe_ul, ativar) %}
+
+
+<aside id="sidebar" class="sidebar">
+
+  <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item">
+      <a class="nav-link " href="/etp94">
+        <i class="bi bi-grid"></i>
+        <span>ETP DIGITAL TIC /IN 94</span>
+      </a>
+    </li><!-- End Dashboard Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#info_basico-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>Informações Básicas</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="info_basico-nav" class="nav-content collapse {% if classe_ul == 'info_basico-nav' %}show{% endif %}" data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="/informacao1-94"  class="{{ 'active' if ativar=='informacao1' else '' }}">
+            <i class="bi bi-circle"></i><span>1. Informações Básicas</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Components Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#necessidade-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-journal-text"></i><span>Necessidades</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="necessidade-nav" class="nav-content collapse {% if classe_ul == 'necessidade-nav' %}show{% endif %}" data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="/necessidade2-94"  class="{{  'active' if ativar=='necessidade2' else '' }}">
+            <i class="bi bi-circle" class="activate"></i><span>2. Descrição da Necessidade</span>
+          </a>
+        </li>
+        <li>
+          <a href="/necessidade3-94"  class="{{ 'active' if ativar=='necessidade3' else ''  }}">
+            <i class="bi bi-circle"></i><span>3. Área Requitante</span>
+          </a>
+        </li>
+        <li>
+          <a href="/necessidade4-94"  class="{{ 'active' if ativar=='necessidade4' else '' }}">
+            <i class="bi bi-circle"></i><span>4. Necessidade de Négocio</span>
+          </a>
+        </li>
+        <li>
+          <a href="/necessidade5-94"  class="{{  'active' if ativar=='necessidade5' else '' }}">
+            <i class="bi bi-circle"></i><span>5. Necessidades Tecnologicas</span>
+          </a>
+        </li>
+        <li>
+          <a href="/necessidade6-94"  class="{{ 'active' if ativar=='necessidade6' else ''  }}">
+            <i class="bi bi-circle"></i><span>6. Demais Requisitos Necessários e Suficiente à Escolha da Solução de TIC</span>
+          </a>
+        </li>
+        <li>
+          <a href="/necessidade7-94"  class="{{ 'active' if ativar=='necessidade7' else '' }}">
+            <i class="bi bi-circle"></i><span>7. Estimativa da Demanda - Quantidade de Bens e Serviços</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Forms Nav -->
+    
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#solucao-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-journal-text"></i><span>Solução</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="solucao-nav" class="nav-content collapse {% if classe_ul == 'solucao-nav' %}show{% endif %}" data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="/solucao8-94"  class="{{ 'active' if ativar=='solucao8' else '' }}">
+            <i class="bi bi-circle"></i><span>8. Demais Requisitos Necessários e Suficientes à Escolha da Solução de TIC</span>
+          </a>
+        </li>
+        <li>
+          <a href="/solucao9-94"  class="{{ 'active' if ativar=='solucao9' else '' }}">
+            <i class="bi bi-circle"></i><span>9. Análise Comparativa de Soluções</span>
+          </a>
+        </li>
+        <li>
+          <a href="/solucao10-94"  class="{{ 'active' if ativar=='solucao10' else '' }}">
+            <i class="bi bi-circle"></i><span>10. Registro de Soluções Consideradas Inviáveis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/solucao11-94"  class="{{ 'active' if ativar=='solucao11' else '' }}">
+            <i class="bi bi-circle"></i><span>11. Análise Comparativa de Custo (TCO)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/solucao12-94"  class="{{ 'active' if ativar=='solucao12' else '' }}">
+            <i class="bi bi-circle"></i><span>12. Descrição da Solução de TIC a Ser Contratada</span>
+          </a>
+        </li>
+        <li>
+          <a href="/solucao13-94"  class="{{ 'active' if ativar=='solucao13' else '' }}">
+            <i class="bi bi-circle"></i><span>13. Estimativa de Custo Total da Contratação</span>
+          </a>
+        </li>
+        <li>
+          <a href="/solucao14-94"  class="{{ 'active' if ativar=='solucao14' else '' }}">
+            <i class="bi bi-circle"></i><span>14. Justificativa Tecnica da Escolha da Solução</span>
+          </a>
+        </li>
+        <li>
+          <a href="/solucao15-94"  class="{{ 'active' if ativar=='solucao15' else '' }}">
+            <i class="bi bi-circle"></i><span>15. Justificativa Econômica da Escolha da Solução</span>
+          </a>
+        </li>
+
+      </ul>
+    </li><!-- End Forms Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#planejamento-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-journal-text"></i><span>Planejamento</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="planejamento-nav" class="nav-content collapse {% if classe_ul == 'planejamento-nav' %}show{% endif %}" data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="/planejamento16-94"  class="{{ 'active' if ativar=='planejamento16' else '' }}">
+            <i class="bi bi-circle"></i><span>16. Benefícios a Serem Alcançados com a Contratação</span>
+          </a>
+        </li>
+        <li>
+          <a href="/planejamento17-94"  class="{{ 'active' if ativar=='planejamento17' else '' }}">
+            <i class="bi bi-circle"></i><span>17. Providências a Serem Adotadas</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Forms Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#viabilidade-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-journal-text"></i><span>Viabilidade</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="viabilidade-nav" class="nav-content collapse {% if classe_ul == 'viabilidade-nav' %}show{% endif %}" data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="/viabilidade18-94"  class="{{ 'active' if ativar=='viabilidade18' else '' }}">
+            <i class="bi bi-circle"></i><span>18. Declaração de Viabilidade</span>
+          </a>
+        </li>
+        <li>
+          <a href="/viabilidade19-94"  class="{{ 'active' if ativar=='viabilidade19' else '' }}">
+            <i class="bi bi-circle"></i><span>19. Responsáveis</span>
+          </a>
+        </li> 
+      </ul>
+    </li><!-- End Viabilidade Nav -->
+
+    <!-- <li class="nav-heading">Pages</li> -->
+
+    <!-- <li class="nav-item">
+      <a class="nav-link collapsed" href="pages-faq.html">
+        <i class="bi bi-question-circle"></i>
+        <span>F.A.Q</span>
+      </a>
+    </li>End F.A.Q Page Nav -->
+
+  
+<!-- 
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="pages-contact.html">
+        <i class="bi bi-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </li>End Contact Page Nav -->
+
+  </ul>
+
+</aside><!-- End Sidebar-->
+
+
+
+<!--
+  
+  {% block content %}
+{{ minha_funcao() | safe }}
+{% endblock %} 
+
+-->
+{% endmacro %}
+

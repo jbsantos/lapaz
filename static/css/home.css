@@ -1,0 +1,87 @@
+body, html {
+  height:100%;
+}
+.py-2{
+    overflow: hidden;
+}
+.card {
+    overflow: hidden;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.card-body .rotate {
+    z-index: 8;
+    float: right;
+    height: 100%;
+}
+
+.card-body .rotate i {
+    color: rgba(20, 20, 20, 0.15);
+    position: absolute;
+    left: auto;
+    right: 21px;
+    bottom: 0px;
+    display: block;
+    -webkit-transform: rotate(-44deg);
+    -moz-transform: rotate(-44deg);
+    -o-transform: rotate(-44deg);
+    -ms-transform: rotate(-44deg);
+    transform: rotate(-44deg);
+}
+
+.invisible-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invisible-button i {
+    color: inherit;
+    margin-right: 10px;
+}
+
+.style-icon {
+    color: #313030; 
+    margin-right: 10px;
+}
+
+.scrollable-table {
+    max-height: 300px; /* Defina a altura máxima que deseja que a tabela seja */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo exceder a altura máxima */
+  }
+  
+  .scrollable-content {
+    max-height: 300px; /* Defina a altura máxima que deseja que a div seja */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo exceder a altura máxima */
+  }
+
+  /* Estilos para o <tbody> com a barra de rolagem */
+.scrollable-tbody {
+    max-height: 400px; /* Altura máxima do <tbody> */
+    overflow-y: auto; /* Adicionar a barra de rolagem vertical conforme necessário */
+  }
+  
+
+
+.hidden {
+   display: none;
+}
+
+#nprogress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Ajuste a altura conforme necessário */
+  background-color: #007bff; /* Cor de fundo da barra de progresso */
+  z-index: 9999; /* Certifique-se de que a barra de progresso esteja na parte superior */
+}
+
+#nprogress .bar {
+  background: #fff; /* Cor da barra de progresso */
+}
+
+  
